@@ -1,31 +1,26 @@
 #!/usr/bin/python3
 
 import random
-numAleatorio = random.randint(1, 101)
 
 
-def adivinhacao(numEscolhido, numAleatorio):
-    if (numEscolhido < numAleatorio and  numEscolhido != numAleatorio):
-        print('Tente outro numero maior!\n')
+def jogoAdivinhacao():
+    numAleatorio= random.randint(1, 101)
+    tentativa = 1
+    while True:
+        numEscolhido = int(input('Digite um numero de 1 a 100: '))
         
-        entradaNum(numAleatorio)
-
-    elif (numEscolhido > numAleatorio and numEscolhido != numAleatorio):
-        print('Tente outro numero menor!\n')
-        entradaNum(numAleatorio)
-
-    else:
-        print(f'Você acertou {numEscolhido}\nO numero aleatorio eh {numAleatorio}')
+        if (numEscolhido not in range(1,101)):
+            print('Valor invalido, digite entre 1 e 100\n')
+        else:
         
+            if (numEscolhido < numAleatorio and numEscolhido != numAleatorio):
+                print('Teste um numero maior')
+                tentativa +=1
+            elif(numEscolhido > numAleatorio and numEscolhido != numAleatorio):
+                print('Teste um numero menor')
+                tentativa +=1
+            else:
+                print(f'Voce acertou {numEscolhido}\nO numero aleatorio{numAleatorio}\nVocê tentou {tentativa}')
+                break
 
-
-def entradaNum(numAle):
-    numUser = int(input('Digite um numero de 1 a 100: '))
-
-    if (numUser not in range(1,101)):
-        print('Valor invalido, digite entre 1 e 100\n')
-    else:
-        adivinhacao(numUser, numAle)
-        
-
-entradaNum(numAleatorio)
+jogoAdivinhacao()
