@@ -1,1 +1,22 @@
 
+Enunciado: Conversor de Unidades
+
+Você deve criar um programa em Python que converta uma quantidade em uma unidade para outras unidades relacionadas. O programa deve oferecer as seguintes opções de conversão:
+
+Converter entre Celsius e Fahrenheit: O usuário pode inserir uma temperatura em Celsius e obter o valor equivalente em Fahrenheit ou vice-versa.
+
+Converter entre quilômetros e milhas: O usuário pode inserir uma distância em quilômetros e obter o valor equivalente em milhas ou vice-versa.
+
+Converter entre quilogramas e libras: O usuário pode inserir um peso em quilogramas e obter o valor equivalente em libras ou vice-versa.
+
+Funcionalidades do programa:
+
+O programa deve exibir um menu de opções para o usuário escolher a conversão desejada.
+
+Após escolher a opção, o usuário deve informar a quantidade a ser convertida.
+
+O programa deve realizar a conversão correta e exibir o resultado.
+
+O programa deve permitir que o usuário execute várias conversões consecutivas, até que ele escolha sair do programa.
+
+O programa deve tratar possíveis erros de entrada, como valores inválidos ou formatos incorretos
