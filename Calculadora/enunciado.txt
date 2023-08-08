@@ -1,0 +1,11 @@
+Enunciado: Calculador de Média
+
+Desenvolva um programa em Python e em C que permita ao usuário calcular a média de um conjunto de números. O programa deve seguir os seguintes passos:
+
+Solicitar ao usuário quantos números ele deseja inserir para calcular a média.
+Pedir ao usuário que insira cada número individualmente.
+Calcular a média dos números inseridos.
+Exibir a média calculada com duas casas decimais.
+Você deve implementar esse projeto tanto em Python quanto em C. 
+A estrutura do programa será a mesma em ambas as linguagens, mas você precisará utilizar as sintaxes específicas de cada uma para receber entrada do usuário, 
+realizar cálculos e exibir resultados.
