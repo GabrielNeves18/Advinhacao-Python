@@ -52,6 +52,7 @@ def jogo_forca(palavra_escolhida, tracos):
             print(linhas)
             
         tentativas +=1
-            
+        
+        
     
 jogo_forca(escolha_palavra(), criacao_forca(escolha_palavra()))
