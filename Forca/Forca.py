@@ -1,58 +1,49 @@
 #!/bin/python3
-"""Puxa o modulo de random"""
+
 import random
 
-def escolha_palavra ():
-    """Escolhe a palavra da forca """
+def escolha_palavra():
     lista_palavra = ['computador', 'hacking', 'asus', 'notebook']
-    palavra_escolhida = random.randint(0, (len(lista_palavra) - 1 ))
-    return lista_palavra[palavra_escolhida]
-
+    palavra_escolhida = random.choice(lista_palavra)
+    return palavra_escolhida
 
 def criacao_forca(palavra):
-
-    """
-        Cria as linhas da forca
-    
-    """
     quantidade_linha = len(palavra)
-    contador = 0
-    linha_forca = []
-    while contador < quantidade_linha:
-        linha_forca.append("- ")
-        contador +=1    
-    
-    return "".join(linha_forca)
+    return ["_"] * quantidade_linha
 
+def exibir_palavra(palavra_cifrada):
+    return " ".join(palavra_cifrada)
 
-def jogo_forca(palavra_escolhida, tracos):
-    """Criação do jogo forca"""
-    
+def jogo_forca(palavra_escolhida, palavra_cifrada):
     chances = 6
     erros = 0
     lista_erros = []
-    tentativas = 0
-    linhas = tracos
-    
-    while tentativas <= chances:
-        letra = input("Digite uma Letra ")
-        
-        if (letra not in palavra_escolhida):
-            erros += 1
-            lista_erros.append(letra)
-            print(tracos)
-            
-            tentativas_restantes = chances -1
-            print(f'Você tem {tentativas_restantes}\n')
-        else:
-            
-            for indice, letra in enumerate(palavra_escolhida):
-                linhas = tracos.replace(tracos[indice], letra)
 
-            print(linhas)
-            
-        tentativas +=1
-        
-        
-    
-jogo_forca(escolha_palavra(), criacao_forca(escolha_palavra()))
+    while erros < chances:
+        print("\nPalavra:", exibir_palavra(palavra_cifrada))
+        print("Letras erradas:", ", ".join(lista_erros))
+        letra = input("Digite uma letra: ").lower()
+
+        if letra.isalpha() and len(letra) == 1 and letra not in lista_erros:
+            if letra in palavra_escolhida:
+                for i, l in enumerate(palavra_escolhida):
+                    if l == letra:
+                        palavra_cifrada[i] = letra
+            else:
+                erros += 1
+                lista_erros.append(letra)
+                print(f'Você errou! Tentativas restantes: {chances - erros}')
+        else:
+            print("Entrada inválida. Por favor, digite uma letra válida.")
+
+        if "_" not in palavra_cifrada:
+            print("\nParabéns! Você acertou a palavra:", palavra_escolhida)
+            break
+
+    if "_" in palavra_cifrada:
+        print(f'\nGame over! A palavra era: {palavra_escolhida}')
+
+if __name__ == "__main__":
+    palavra = escolha_palavra()
+    cifrada = criacao_forca(palavra)
+    jogo_forca(palavra, cifrada)
