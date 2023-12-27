@@ -34,24 +34,10 @@ def jogo_forca(palavra_escolhida, tracos):
     tentativas = 0
     linhas = tracos
     
-    while tentativas <= chances:
-        letra = input("Digite uma Letra ")
-        
-        if (letra not in palavra_escolhida):
-            erros += 1
-            lista_erros.append(letra)
-            print(tracos)
-            
-            tentativas_restantes = chances -1
-            print(f'Você tem {tentativas_restantes}\n')
-        else:
-            
-            for indice, letra in enumerate(palavra_escolhida):
-                linhas = tracos.replace(tracos[indice], letra)
-
-            print(linhas)
-            
-        tentativas +=1
+    print(linhas)
+    
+    
+    
         
         
     
