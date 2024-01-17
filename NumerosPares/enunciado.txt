@@ -1,0 +1,1 @@
+Desenvolva um programa que receba uma lista de números do usuário e exiba a soma dos elementos pares presentes na lista.
