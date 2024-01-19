@@ -55,7 +55,7 @@ def separa_num_par_impar(lista_num):
         if numero % 2 == 0:
             lista_par.append(numero)
         else:
-            lista_impares.append(numero)    
+            lista_impares.append(numero)
     return lista_par, lista_impares
 
 def calculo_media(listas_separadas):
