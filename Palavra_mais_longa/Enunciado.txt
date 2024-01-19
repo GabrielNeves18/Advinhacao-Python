@@ -1,0 +1,4 @@
+Desenvolva um programa que receba uma lista de palavras do usuário e retorne a 
+palavra mais longa presente na lista. Considere que a lista pode conter palavras de tamanhos 
+diferentes, e o programa deve lidar corretamente com empates, retornando a primeira palavra 
+mais longa encontrada.
