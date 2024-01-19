@@ -1,0 +1,9 @@
+Desenvolva um programa que receba uma lista de números do usuário. O programa deve calcular e 
+exibir a média aritmética dos números, indicar o valor mínimo e máximo presentes na lista, e 
+contar quantos números estão acima da média.
+
+- lista numero ok
+- media dos numeros ok 
+- max e min ok 
+- numeros acima da média 
+
