@@ -1,0 +1,10 @@
+Desenvolva um programa que receba uma lista de palavras do usuário. O programa deve criar uma 
+nova lista contendo apenas as palavras que começam com a letra 'A' ou 'a'. 
+Em seguida, o programa deve exibir a lista resultante, bem como o número total de palavras na 
+lista original e o número de palavras que começam com 'A' ou 'a'.
+
+- Criar uma lista com palavras OK
+- Criar uma lista com letra A ou a OK 
+- Mostrar a lista resultante OK 
+- Mostrar total de palavras na lista original OK 
+- Mostrar total de palavras com a OK

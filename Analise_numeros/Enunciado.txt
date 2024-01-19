@@ -1,0 +1,12 @@
+Desenvolva um programa que receba uma lista de números inteiros do usuário. O programa deve 
+criar duas novas listas: uma contendo os números pares e outra contendo os números ímpares. 
+Ao final, o programa deve exibir as duas listas resultantes, além da média dos números pares e 
+a média dos números ímpares presentes na lista original.
+
+- Criar lista com numeros OK
+- Criar lista pares OK
+- Criar lista impares OK
+- Exibir resultantes OK 
+- Media numeros pares OK
+- Media numeros impares OK
+
