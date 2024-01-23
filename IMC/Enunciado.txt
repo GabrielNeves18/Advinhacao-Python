@@ -1,0 +1,23 @@
+Nome do Exercício: Calculadora de Índice de Massa Corporal (IMC)
+
+Descrição:
+
+Desenvolva um programa em Python que permita ao usuário calcular o Índice de Massa Corporal (IMC) com base em sua altura e peso. 
+O IMC é uma medida comum usada para avaliar se uma pessoa tem um peso saudável em relação à sua altura.
+
+Instruções:
+
+Solicite ao usuário que insira seu peso em quilogramas.
+Solicite ao usuário que insira sua altura em metros.
+Calcule o IMC usando a fórmula: IMC = peso / (altura * altura)
+Classifique o resultado do IMC de acordo com a tabela abaixo:
+
+Abaixo de 18,5: Abaixo do peso
+18,5 a 24,9: Peso normal
+25,0 a 29,9: Sobrepeso
+30,0 a 34,9: Obesidade grau 1
+35,0 a 39,9: Obesidade grau 2
+40,0 ou mais: Obesidade grau 3 (obesidade mórbida)
+Exiba o resultado do IMC e a classificação correspondente.
+
+Certifique-se de validar as entradas do usuário para garantir que sejam valores numéricos válidos.
