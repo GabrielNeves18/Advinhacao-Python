@@ -1,0 +1,14 @@
+Nome do Programa: "Desafio da Viagem Interplanetária"
+
+Descrição: Imagine que você está planejando uma viagem interplanetária para explorar diferentes planetas do sistema solar. 
+Crie um programa em Python que ajude a calcular a quantidade de combustível necessária para viajar de um planeta para 
+outro, considerando as distâncias médias entre eles e a eficiência do veículo espacial.
+
+O programa deve solicitar ao usuário que escolha o planeta de origem e o destino, e em seguida, calcular e exibir a 
+quantidade estimada de combustível necessário para a viagem. Considere diferentes tipos de combustíveis e 
+suas eficiências específicas para cada planeta.
+
+Além disso, o programa pode incluir uma funcionalidade adicional, como fornecer informações sobre a duração da viagem, 
+a velocidade média do veículo espacial, ou até mesmo sugerir paradas estratégicas em planetas intermediários para 
+reabastecimento.
+
